@@ -17,7 +17,7 @@ public class ArrayListMethods {
 
     public static ArrayList<Double> firstAndLast(){
         ArrayList<Double> list = new ArrayList<Double>();
-        int n = 1;  
+        int n = 1;
         while(n != 0) {
             System.out.println("Enter a number: ");
             double x = input.nextDouble();
@@ -33,21 +33,6 @@ public class ArrayListMethods {
         return output;
     }
 
-    /*public static ArrayList<Double> firstAndLast() {
-        ArrayList<Double> list = new ArrayList<>();
-        double n = 2;
-        System.out.println("Enter your number: ");
-        while (n != 0){
-            n = input.nextDouble();
-            list.add(n);
-        }
-        ArrayList<Double> outcome = new ArrayList<>();
-        outcome.add(list.size()-1.0);
-        outcome.add(list.get(0));
-        outcome.add(list.get(list.size()-2));
-        return outcome;
-    }
-*/
     public static ArrayList<Double> getNumbers() {
         ArrayList<Double> List = new ArrayList<Double>(3);
         double one = input.nextDouble(); double two = input.nextDouble(); double three = input.nextDouble();
