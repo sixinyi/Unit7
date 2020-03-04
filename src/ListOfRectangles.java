@@ -5,18 +5,22 @@ import java.util.Scanner;
 
 public class ListOfRectangles {
     public static ArrayList<Rectangle> getRectangles() throws FileNotFoundException {
+        ArrayList<Rectangle> num = new ArrayList<>();
+
         Scanner input = new Scanner(new File("D:\\OS\\Java project\\Unit7\\out\\production\\Unit7\\rectangle.txt"));
-        ArrayList<Rectangle> List = new ArrayList<>();
+
         while(input.hasNextDouble()){
             double newLength = input.nextDouble();
             double newWidth = input.nextDouble();
-            List.add(new Rectangle(newLength, newWidth));
+            num.add(new Rectangle(newLength, newWidth));
         }
-        return List;
+        return num;
     }
 
     public static double findAverage(ArrayList<Rectangle> rectangles) {
+
         double value = 0.0;
+
         for(Rectangle List : rectangles)
             value += List.getArea();
 
